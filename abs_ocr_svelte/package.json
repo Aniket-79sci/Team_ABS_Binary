@@ -1,0 +1,44 @@
+{
+	"name": "abs-ocr-svelte",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"format": "prettier --write .",
+		"lint": "prettier --check ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "^3.0.8",
+		"@sveltejs/kit": "^2.16.0",
+		"@sveltejs/vite-plugin-svelte": "^5.0.0",
+		"@tailwindcss/container-queries": "^0.1.1",
+		"@tailwindcss/forms": "^0.5.10",
+		"@tailwindcss/typography": "^0.5.16",
+		"autoprefixer": "^10.4.20",
+		"bits-ui": "0.22.0",
+		"clsx": "^2.1.1",
+		"prettier": "^3.4.2",
+		"prettier-plugin-svelte": "^3.3.3",
+		"prettier-plugin-tailwindcss": "^0.6.10",
+		"svelte": "^5.0.0",
+		"tailwind-merge": "^3.0.2",
+		"tailwind-variants": "^1.0.0",
+		"tailwindcss": "^3.4.17",
+		"vite": "^6.0.0"
+	},
+	"packageManager": "pnpm@10.6.2+sha512.47870716bea1572b53df34ad8647b42962bc790ce2bf4562ba0f643237d7302a3d6a8ecef9e4bdfc01d23af1969aa90485d4cebb0b9638fa5ef1daef656f6c1b",
+	"dependencies": {
+		"pdfjs-dist": "^5.0.375",
+		"tesseract.js": "^6.0.0",
+		"tesseract.js-core": "^6.0.0"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"tesseract.js"
+		]
+	}
+}
